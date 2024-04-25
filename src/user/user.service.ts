@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, HttpException, HttpStatus  } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 
@@ -9,6 +9,7 @@ export class UserService {
   }
 
   findAll() {
+    // throw new HttpException('Forbidden', HttpStatus.FORBIDDEN)
     return `This action returns all user`;
   }
 

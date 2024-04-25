@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module} from '@nestjs/common';
 import { UserModule } from './user/user.module';
 
 @Module({
@@ -6,4 +6,6 @@ import { UserModule } from './user/user.module';
   controllers: [],
   providers: [],
 })
-export class AppModule {}
+export class AppModule  {
+
+}
